@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page with Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen  bg-slate-200 flex items-center justify-center px-4 ">
+  <div class="w-full max-w-md bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden ">
+    <div class="bg-gradient-to-r from-violet-600 to-cyan-500 p-8 text-center text-white">
+      <h1 class="text-xl font-semibold mb-2 text-zinc-600">Login to Website</h1>
+    </div>
+
+    <form class="p-8 space-y-6 bg-white">
+      <div>
+        <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" class="w-full rounded-2xl border border-zinc-600 bg-slate-50 p-2 text-slate-900 hover:border-violet-500 focus:border-violet-300 focus:ring-2 focus:ring-violet-100 outline-none transition " />
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-slate-700 mb-2">Password</label>
+        <input id="password" type="password" placeholder="Your password" class="w-full rounded-2xl border border-zinc-600 bg-slate-50 p-2 text-slate-900 hover:border-violet-500 focus:border-violet-300 focus:ring-2 focus:ring-violet-100 outline-none transition " />
+      </div>
+      <button type="submit" class="w-36 rounded-full bg-violet-500 text-white p-2 text-sm font-semibold active:bg-violet-600 hover:bg-violet-400 focus:ring focus:ring-violet-300">Sign in</button>
+      <button type="submit" class="w-36 rounded-full bg-violet-500 text-white p-2 text-sm font-semibold active:bg-violet-600 hover:bg-violet-400 focus:ring focus:ring-violet-300 focus:text-violet-600">Sign up</button>
+    </form>
+  </div>
+</body>
+</html>
